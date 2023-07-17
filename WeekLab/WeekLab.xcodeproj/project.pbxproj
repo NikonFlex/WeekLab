@@ -11,6 +11,12 @@
 		F3D8C83D2A66026C008C10BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C83C2A66026C008C10BD /* ContentView.swift */; };
 		F3D8C83F2A66026F008C10BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D8C83E2A66026F008C10BD /* Assets.xcassets */; };
 		F3D8C8422A66026F008C10BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D8C8412A66026F008C10BD /* Preview Assets.xcassets */; };
+		F3D8C84B2A6603E0008C10BD /* Disket-Mono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D8C8492A6603E0008C10BD /* Disket-Mono-Bold.ttf */; };
+		F3D8C84C2A6603E0008C10BD /* Disket-Mono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D8C84A2A6603E0008C10BD /* Disket-Mono-Regular.ttf */; };
+		F3D8C8542A660506008C10BD /* WeekDayFront.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C8502A660506008C10BD /* WeekDayFront.swift */; };
+		F3D8C8552A660506008C10BD /* CommonBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C8512A660506008C10BD /* CommonBackground.swift */; };
+		F3D8C8562A660506008C10BD /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C8522A660506008C10BD /* WeekDay.swift */; };
+		F3D8C8572A660506008C10BD /* WeekDayBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C8532A660506008C10BD /* WeekDayBack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,13 @@
 		F3D8C83C2A66026C008C10BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F3D8C83E2A66026F008C10BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3D8C8412A66026F008C10BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F3D8C8492A6603E0008C10BD /* Disket-Mono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Disket-Mono-Bold.ttf"; sourceTree = "<group>"; };
+		F3D8C84A2A6603E0008C10BD /* Disket-Mono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Disket-Mono-Regular.ttf"; sourceTree = "<group>"; };
+		F3D8C84D2A660401008C10BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F3D8C8502A660506008C10BD /* WeekDayFront.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekDayFront.swift; sourceTree = "<group>"; };
+		F3D8C8512A660506008C10BD /* CommonBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonBackground.swift; sourceTree = "<group>"; };
+		F3D8C8522A660506008C10BD /* WeekDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
+		F3D8C8532A660506008C10BD /* WeekDayBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekDayBack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +64,11 @@
 		F3D8C8392A66026C008C10BD /* WeekLab */ = {
 			isa = PBXGroup;
 			children = (
+				F3D8C84D2A660401008C10BD /* Info.plist */,
 				F3D8C83A2A66026C008C10BD /* WeekLabApp.swift */,
-				F3D8C83C2A66026C008C10BD /* ContentView.swift */,
 				F3D8C83E2A66026F008C10BD /* Assets.xcassets */,
+				F3D8C84E2A6604AC008C10BD /* Views */,
+				F3D8C8482A6603C6008C10BD /* Resources */,
 				F3D8C8402A66026F008C10BD /* Preview Content */,
 			);
 			path = WeekLab;
@@ -65,6 +80,35 @@
 				F3D8C8412A66026F008C10BD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F3D8C8482A6603C6008C10BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F3D8C8492A6603E0008C10BD /* Disket-Mono-Bold.ttf */,
+				F3D8C84A2A6603E0008C10BD /* Disket-Mono-Regular.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F3D8C84E2A6604AC008C10BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3D8C83C2A66026C008C10BD /* ContentView.swift */,
+				F3D8C84F2A6604EB008C10BD /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F3D8C84F2A6604EB008C10BD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F3D8C8512A660506008C10BD /* CommonBackground.swift */,
+				F3D8C8522A660506008C10BD /* WeekDay.swift */,
+				F3D8C8532A660506008C10BD /* WeekDayBack.swift */,
+				F3D8C8502A660506008C10BD /* WeekDayFront.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +169,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D8C84C2A6603E0008C10BD /* Disket-Mono-Regular.ttf in Resources */,
+				F3D8C84B2A6603E0008C10BD /* Disket-Mono-Bold.ttf in Resources */,
 				F3D8C8422A66026F008C10BD /* Preview Assets.xcassets in Resources */,
 				F3D8C83F2A66026F008C10BD /* Assets.xcassets in Resources */,
 			);
@@ -139,6 +185,10 @@
 			files = (
 				F3D8C83D2A66026C008C10BD /* ContentView.swift in Sources */,
 				F3D8C83B2A66026C008C10BD /* WeekLabApp.swift in Sources */,
+				F3D8C8562A660506008C10BD /* WeekDay.swift in Sources */,
+				F3D8C8552A660506008C10BD /* CommonBackground.swift in Sources */,
+				F3D8C8542A660506008C10BD /* WeekDayFront.swift in Sources */,
+				F3D8C8572A660506008C10BD /* WeekDayBack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +320,7 @@
 				DEVELOPMENT_TEAM = HGNSVP6649;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeekLab/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +350,7 @@
 				DEVELOPMENT_TEAM = HGNSVP6649;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeekLab/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

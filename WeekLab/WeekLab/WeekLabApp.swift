@@ -1,11 +1,6 @@
-//
-//  WeekLabApp.swift
-//  WeekLab
-//
-//  Created by Nikon Parvitskiy on 2023-07-18.
-//
-
 import SwiftUI
+
+let screen = UIScreen.main.bounds
 
 @main
 struct WeekLabApp: App {
