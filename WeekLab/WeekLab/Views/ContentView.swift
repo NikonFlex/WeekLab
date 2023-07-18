@@ -22,13 +22,13 @@ struct ContentView: View
             {
                 VStack
                 {
-                    WeekDay(day: "MONDAY").padding(4)
-                    WeekDay(day: "TUESDAY").padding(4)
-                    WeekDay(day: "WEDNESDAY").padding(4)
-                    WeekDay(day: "THURSDAY").padding(4)
-                    WeekDay(day: "FRIDAY").padding(4)
-                    WeekDay(day: "SATURDAY").padding(4)
-                    WeekDay(day: "SUNDAY").padding(4)
+                    WeekDay(day: Card.Monday).padding(4)
+                    WeekDay(day: Card.Tuesday).padding(4)
+                    WeekDay(day: Card.Wednesday).padding(4)
+                    WeekDay(day: Card.Thursday).padding(4)
+                    WeekDay(day: Card.Friday).padding(4)
+                    WeekDay(day: Card.Saturday).padding(4)
+                    WeekDay(day: Card.Sunday).padding(4)
                 }
             }
         }

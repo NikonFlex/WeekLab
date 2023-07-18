@@ -2,21 +2,22 @@ import SwiftUI
 
 struct WeekDayFront: View
 {
-    @State public var day: String
+    @State public var day: Card
     
     var body: some View
     {
-        ZStack {
+        ZStack
+        {
             RoundedRectangle(cornerRadius: 25)
                 .frame(width: screen.width - 30, height: (screen.width - 30) / 1.2)
                 .shadow(color: Color("EerieBlack"), radius: 6, x: 0, y: 5)
             
-            Text(day)
+            Text(day.rawValue)
                 .frame(width: screen.width - 30, height: (screen.width - 30) / 1.2)
                 .background(Gradient(colors: [Color("EerieBlack"), Color("BlackOlive")]))
                 .foregroundColor(Color("TimberWolf"))
                 .font(.custom("Disket Mono", size: 45))
-                .shadow(color: Color("TimberWolf"), radius: 5)
+                .shadow(color: Color("TimberWolf"), radius: 6)
                 .cornerRadius(25)
         }
     }
@@ -26,6 +27,6 @@ struct WeekDayFront_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        WeekDayFront(day: "SATURDAY")
+        WeekDayFront(day: Card.Wednesday)
     }
 }
