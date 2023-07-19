@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3764B4B2A67580600DAED5A /* IssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C85B2A66B774008C10BD /* IssueView.swift */; };
 		F3D8C83B2A66026C008C10BD /* WeekLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C83A2A66026C008C10BD /* WeekLabApp.swift */; };
 		F3D8C83D2A66026C008C10BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C83C2A66026C008C10BD /* ContentView.swift */; };
 		F3D8C83F2A66026F008C10BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D8C83E2A66026F008C10BD /* Assets.xcassets */; };
 		F3D8C8422A66026F008C10BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D8C8412A66026F008C10BD /* Preview Assets.xcassets */; };
 		F3D8C84B2A6603E0008C10BD /* Disket-Mono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D8C8492A6603E0008C10BD /* Disket-Mono-Bold.ttf */; };
 		F3D8C84C2A6603E0008C10BD /* Disket-Mono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D8C84A2A6603E0008C10BD /* Disket-Mono-Regular.ttf */; };
-		F3D8C8542A660506008C10BD /* WeekDayFront.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C8502A660506008C10BD /* WeekDayFront.swift */; };
+		F3D8C8542A660506008C10BD /* WeekDayFrontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C8502A660506008C10BD /* WeekDayFrontView.swift */; };
 		F3D8C8552A660506008C10BD /* CommonBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C8512A660506008C10BD /* CommonBackground.swift */; };
-		F3D8C8562A660506008C10BD /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C8522A660506008C10BD /* WeekDay.swift */; };
-		F3D8C8572A660506008C10BD /* WeekDayBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C8532A660506008C10BD /* WeekDayBack.swift */; };
+		F3D8C8562A660506008C10BD /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C8522A660506008C10BD /* WeekDayView.swift */; };
+		F3D8C8572A660506008C10BD /* WeekDayBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C8532A660506008C10BD /* WeekDayBackView.swift */; };
 		F3D8C85A2A660F92008C10BD /* CardEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C8592A660F92008C10BD /* CardEnum.swift */; };
+		F3D8C85E2A66CEFE008C10BD /* hasubi-monowght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D8C85D2A66CEFD008C10BD /* hasubi-monowght.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +31,13 @@
 		F3D8C8492A6603E0008C10BD /* Disket-Mono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Disket-Mono-Bold.ttf"; sourceTree = "<group>"; };
 		F3D8C84A2A6603E0008C10BD /* Disket-Mono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Disket-Mono-Regular.ttf"; sourceTree = "<group>"; };
 		F3D8C84D2A660401008C10BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		F3D8C8502A660506008C10BD /* WeekDayFront.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekDayFront.swift; sourceTree = "<group>"; };
+		F3D8C8502A660506008C10BD /* WeekDayFrontView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekDayFrontView.swift; sourceTree = "<group>"; };
 		F3D8C8512A660506008C10BD /* CommonBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonBackground.swift; sourceTree = "<group>"; };
-		F3D8C8522A660506008C10BD /* WeekDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
-		F3D8C8532A660506008C10BD /* WeekDayBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekDayBack.swift; sourceTree = "<group>"; };
+		F3D8C8522A660506008C10BD /* WeekDayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
+		F3D8C8532A660506008C10BD /* WeekDayBackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekDayBackView.swift; sourceTree = "<group>"; };
 		F3D8C8592A660F92008C10BD /* CardEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEnum.swift; sourceTree = "<group>"; };
+		F3D8C85B2A66B774008C10BD /* IssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueView.swift; sourceTree = "<group>"; };
+		F3D8C85D2A66CEFD008C10BD /* hasubi-monowght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "hasubi-monowght.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 		F3D8C8482A6603C6008C10BD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F3D8C85D2A66CEFD008C10BD /* hasubi-monowght.ttf */,
 				F3D8C8492A6603E0008C10BD /* Disket-Mono-Bold.ttf */,
 				F3D8C84A2A6603E0008C10BD /* Disket-Mono-Regular.ttf */,
 			);
@@ -107,9 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				F3D8C8512A660506008C10BD /* CommonBackground.swift */,
-				F3D8C8522A660506008C10BD /* WeekDay.swift */,
-				F3D8C8532A660506008C10BD /* WeekDayBack.swift */,
-				F3D8C8502A660506008C10BD /* WeekDayFront.swift */,
+				F3D8C8522A660506008C10BD /* WeekDayView.swift */,
+				F3D8C8532A660506008C10BD /* WeekDayBackView.swift */,
+				F3D8C8502A660506008C10BD /* WeekDayFrontView.swift */,
+				F3D8C85B2A66B774008C10BD /* IssueView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -183,6 +189,7 @@
 				F3D8C84C2A6603E0008C10BD /* Disket-Mono-Regular.ttf in Resources */,
 				F3D8C84B2A6603E0008C10BD /* Disket-Mono-Bold.ttf in Resources */,
 				F3D8C8422A66026F008C10BD /* Preview Assets.xcassets in Resources */,
+				F3D8C85E2A66CEFE008C10BD /* hasubi-monowght.ttf in Resources */,
 				F3D8C83F2A66026F008C10BD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,10 +204,11 @@
 				F3D8C83D2A66026C008C10BD /* ContentView.swift in Sources */,
 				F3D8C85A2A660F92008C10BD /* CardEnum.swift in Sources */,
 				F3D8C83B2A66026C008C10BD /* WeekLabApp.swift in Sources */,
-				F3D8C8562A660506008C10BD /* WeekDay.swift in Sources */,
+				F3D8C8562A660506008C10BD /* WeekDayView.swift in Sources */,
 				F3D8C8552A660506008C10BD /* CommonBackground.swift in Sources */,
-				F3D8C8542A660506008C10BD /* WeekDayFront.swift in Sources */,
-				F3D8C8572A660506008C10BD /* WeekDayBack.swift in Sources */,
+				F3D8C8542A660506008C10BD /* WeekDayFrontView.swift in Sources */,
+				F3764B4B2A67580600DAED5A /* IssueView.swift in Sources */,
+				F3D8C8572A660506008C10BD /* WeekDayBackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,8 +344,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -366,8 +373,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

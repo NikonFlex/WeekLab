@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct WeekDayFront: View
+struct WeekDayFrontView: View
 {
     @State public var day: Card
     
@@ -23,10 +23,10 @@ struct WeekDayFront: View
     }
 }
 
-struct WeekDayFront_Previews: PreviewProvider
+struct WeekDayFrontView_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        WeekDayFront(day: Card.Wednesday)
+        WeekDayFrontView(day: Card.Wednesday)
     }
 }

@@ -1,7 +1,7 @@
 import SwiftUI
 import AudioToolbox
 
-struct WeekDay: View
+struct WeekDayView: View
 {
     @State private var flipped = false
     @State private var animate3d = false
@@ -13,13 +13,13 @@ struct WeekDay: View
         {
             ZStack()
             {
-                WeekDayFront(day: day).opacity(flipped ? 0.0 : 1.0)
-                WeekDayBack(day: day).opacity(flipped ? 1.0 : 0.0)
+                WeekDayFrontView(day: day).opacity(flipped ? 0.0 : 1.0)
+                WeekDayBackView(day: day).opacity(flipped ? 1.0 : 0.0)
             }
             .modifier(FlipEffect(flipped: $flipped, angle: animate3d ? 180 : 0, axis: (x: 0, y: 1)))
             .onTapGesture
             {
-                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {   }
+                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) { }
                 withAnimation(Animation.linear(duration: 0.8))
                 {
                     self.animate3d.toggle()
@@ -65,10 +65,10 @@ struct FlipEffect: GeometryEffect
 }
 
 
-struct WeekDay_Previews: PreviewProvider
+struct WeekDayView_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        WeekDay(day: Card.Wednesday)
+        WeekDayView(day: Card.Wednesday)
     }
 }
