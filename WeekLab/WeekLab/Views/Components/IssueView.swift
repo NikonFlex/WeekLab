@@ -9,6 +9,8 @@ struct IssueView: View
     {
         VStack(spacing: 0)
         {
+            TimberWolfDivider(shift: 0)
+            
             HStack(spacing: 0)
             {
                 Text("1200")
@@ -20,43 +22,33 @@ struct IssueView: View
                 VStack(spacing: 0)
                 {
                     Text("Репетитор по английскому")
-                        .foregroundColor(Color("TimberWolf"))
+                        .foregroundColor(Color("FloralWhite"))
                         .font(.custom("Hasubi Mono", size: 20))
                         .frame(width: screen.width - 36 - 45, height: 50, alignment: .center)
                     
-                    Divider()
-                        .overlay(Color("TimberWolf"))
-                        .frame(width: screen.width - 36 - 45, height: 1)
+                    TimberWolfDivider(shift: 45)
                     
                     HStack(spacing: 0)
                     {
                         Spacer()
                             .frame(width: 10, height: 0)
                         
-                        Text("Delete")
-                            .foregroundColor(Color("Flame"))
-                            .font(.custom("Hasubi Mono", size: 20))
-                            .onTapGesture
-                            {
-                                print("-")
-                            }
+                        AccentText(text: "Delete").onTapGesture { print("delete") }
                         
                         Spacer()
                             .frame(width: 10, height: 0)
                         
-                        Text("Edit")
-                            .foregroundColor(Color("Flame"))
-                            .font(.custom("Hasubi Mono", size: 20))
-                            .onTapGesture
-                            {
-                                print("edit")
-                            }
+                        AccentText(text: "Edit").onTapGesture { print("edit") }
                         
                         Spacer()
 
-                        Text("Remind on 11.00")
-                            .foregroundColor(Color("Flame"))
+                        Text("Remind on: 11.00")
+                            .foregroundColor(Color("FloralWhite"))
                             .font(.custom("Hasubi Mono", size: 20))
+                            .frame(width: .nan, height: 50, alignment: .center)
+                        
+                        Spacer()
+                            .frame(width: 10, height: 0)
                             
                     }
                     .frame(width: screen.width - 36 - 45, height: 20)
@@ -64,9 +56,7 @@ struct IssueView: View
             }
             .frame(width: screen.width - 36, height: 70)
             
-            Divider()
-                .overlay(Color("TimberWolf"))
-                .frame(width: screen.width - 36, height: 1)
+            TimberWolfDivider(shift: 0)
         }
     }
 }

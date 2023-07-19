@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F3764B4B2A67580600DAED5A /* IssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C85B2A66B774008C10BD /* IssueView.swift */; };
+		F39FE9802A68948200CC2530 /* AccentText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39FE97F2A68948200CC2530 /* AccentText.swift */; };
+		F39FE9822A6895D900CC2530 /* TimberWolfDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39FE9812A6895D900CC2530 /* TimberWolfDivider.swift */; };
 		F3D8C83B2A66026C008C10BD /* WeekLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C83A2A66026C008C10BD /* WeekLabApp.swift */; };
 		F3D8C83D2A66026C008C10BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8C83C2A66026C008C10BD /* ContentView.swift */; };
 		F3D8C83F2A66026F008C10BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D8C83E2A66026F008C10BD /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F39FE97F2A68948200CC2530 /* AccentText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentText.swift; sourceTree = "<group>"; };
+		F39FE9812A6895D900CC2530 /* TimberWolfDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimberWolfDivider.swift; sourceTree = "<group>"; };
 		F3D8C8372A66026C008C10BD /* WeekLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeekLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D8C83A2A66026C008C10BD /* WeekLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekLabApp.swift; sourceTree = "<group>"; };
 		F3D8C83C2A66026C008C10BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 				F3D8C8532A660506008C10BD /* WeekDayBackView.swift */,
 				F3D8C8502A660506008C10BD /* WeekDayFrontView.swift */,
 				F3D8C85B2A66B774008C10BD /* IssueView.swift */,
+				F39FE97F2A68948200CC2530 /* AccentText.swift */,
+				F39FE9812A6895D900CC2530 /* TimberWolfDivider.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -202,6 +208,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3D8C83D2A66026C008C10BD /* ContentView.swift in Sources */,
+				F39FE9802A68948200CC2530 /* AccentText.swift in Sources */,
+				F39FE9822A6895D900CC2530 /* TimberWolfDivider.swift in Sources */,
 				F3D8C85A2A660F92008C10BD /* CardEnum.swift in Sources */,
 				F3D8C83B2A66026C008C10BD /* WeekLabApp.swift in Sources */,
 				F3D8C8562A660506008C10BD /* WeekDayView.swift in Sources */,

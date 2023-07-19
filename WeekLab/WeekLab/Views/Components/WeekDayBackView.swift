@@ -32,9 +32,7 @@ struct WeekDayBackView: View
                     .foregroundColor(Color("FloralWhite"))
                     .frame(width: screen.width - 30, height: 20)
                 
-                Divider()
-                    .overlay(Color("TimberWolf"))
-                    .frame(width: screen.width - 36, height: 1)
+                TimberWolfDivider(shift: 0)
                 
                 ScrollView(showsIndicators: false)
                 {
@@ -45,9 +43,32 @@ struct WeekDayBackView: View
                     IssueView(day: day, time: "12.00")
                     IssueView(day: day, time: "12.00")
                 }
+                .clipShape(Rectangle())
                 .frame(width: screen.width - 30, height: (screen.width - 30) / 1.2 - 50)
+                .lineSpacing(0)
+                
+                TimberWolfDivider(shift: 0)
+                
+                HStack
+                {
+                    AccentText(text: "Add new plan")
+                        .onTapGesture
+                        {
+                            print("add new plan")
+                        }
+                    
+                    Spacer()
+                    
+                    AccentText(text: "Clear all")
+                        .onTapGesture
+                        {
+                            print("clear all")
+                        }
+                }.frame(width: screen.width - 100, height: 20)
                 
                 Spacer()
+                    .frame(width: screen.width - 30, height: 2)
+                
             }
             .frame(width: screen.width - 30, height: (screen.width - 30) / 1.2)
         }
