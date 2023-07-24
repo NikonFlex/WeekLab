@@ -11,50 +11,46 @@ struct IssueView: View
         {
             TimberWolfDivider(shift: 0)
             
-            HStack(spacing: 0)
+            ScrollView(.horizontal, showsIndicators: false)
             {
-                Text("1200")
-                    .foregroundColor(Color("TimberWolf"))
-                    .font(.custom("Disket Mono", size: 30))
-                    .shadow(color: Color("TimberWolf"), radius: 6)
-                    .frame(width: 45, height: 70)
-                
-                VStack(spacing: 0)
+                HStack(spacing: 0)
                 {
-                    Text("Репетитор по английскому")
-                        .foregroundColor(Color("FloralWhite"))
-                        .font(.custom("Hasubi Mono", size: 20))
-                        .frame(width: screen.width - 36 - 45, height: 50, alignment: .center)
+                    Text("1200")
+                        .foregroundColor(Color("TimberWolf"))
+                        .font(.custom("Disket Mono", size: 30))
+                        .shadow(color: Color("TimberWolf"), radius: 6)
+                        .frame(width: 45, height: 70)
+                        .onTapGesture { print("time") }
                     
-                    TimberWolfDivider(shift: 45)
-                    
-                    HStack(spacing: 0)
+                    VStack(spacing: 0)
                     {
-                        Spacer()
-                            .frame(width: 10, height: 0)
-                        
-                        AccentText(text: "Delete").onTapGesture { print("delete") }
-                        
-                        Spacer()
-                            .frame(width: 10, height: 0)
-                        
-                        AccentText(text: "Edit").onTapGesture { print("edit") }
-                        
-                        Spacer()
-
-                        Text("Remind on: 11.00")
+                        Text("Репетитор по английскому")
                             .foregroundColor(Color("FloralWhite"))
                             .font(.custom("Hasubi Mono", size: 20))
-                            .frame(width: .nan, height: 50, alignment: .center)
+                            .frame(width: screen.width - 36 - 45, height: 50, alignment: .center)
+                            .onTapGesture { print("content") }
                         
-                        Spacer()
-                            .frame(width: 10, height: 0)
+                        TimberWolfDivider(shift: 45)
+                        
+                        HStack(spacing: 0)
+                        {
+                            Spacer()
                             
+                            Text("Remind on: 11.00")
+                                .foregroundColor(Color("Flame"))
+                                .font(.custom("Hasubi Mono", size: 20))
+                                .onTapGesture { print("remindTime") }
+                            
+                            Spacer()
+                                .frame(width: 10, height: 0)
+                            
+                        }
+                        .frame(width: screen.width - 36 - 45, height: 20)
                     }
-                    .frame(width: screen.width - 36 - 45, height: 20)
                 }
+                .frame(width: screen.width - 36, height: 70)
             }
-            .frame(width: screen.width - 36, height: 70)
+            .frame(width: .infinity, height: 70)
             
             TimberWolfDivider(shift: 0)
         }

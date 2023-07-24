@@ -51,19 +51,11 @@ struct WeekDayBackView: View
                 
                 HStack
                 {
-                    AccentText(text: "Add new plan")
-                        .onTapGesture
-                        {
-                            print("add new plan")
-                        }
+                    Text("+")
+                        .foregroundColor(Color("Flame"))
+                        .font(.custom("Hasubi Mono", size: 45))
+                        .onTapGesture { print("add new plan") }
                     
-                    Spacer()
-                    
-                    AccentText(text: "Clear all")
-                        .onTapGesture
-                        {
-                            print("clear all")
-                        }
                 }.frame(width: screen.width - 100, height: 20)
                 
                 Spacer()
